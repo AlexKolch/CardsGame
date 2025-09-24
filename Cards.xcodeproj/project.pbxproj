@@ -10,6 +10,7 @@
 		FCEEBA272E49DE0C00C23023 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEEBA3F2E49DE3B00C23023 /* BezierExperiments.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BezierExperiments.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FCEEBA562E53160000C23023 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FCEEBB492E5DD72300C23023 /* Balls.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Balls.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -47,6 +48,7 @@
 		FCEEBA1E2E49DE0C00C23023 = {
 			isa = PBXGroup;
 			children = (
+				FCEEBB492E5DD72300C23023 /* Balls.playground */,
 				FCEEBA562E53160000C23023 /* MyPlayground.playground */,
 				FCEEBA3F2E49DE3B00C23023 /* BezierExperiments.playground */,
 				FCEEBA292E49DE0C00C23023 /* Cards */,

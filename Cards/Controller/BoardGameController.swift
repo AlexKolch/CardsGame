@@ -26,6 +26,7 @@ class BoardGameController: UIViewController {
         btn.center.x = view.center.x
         // получаем доступ к текущему окну чтобы высчитать отступ сверху
         let window = UIApplication.shared.windows.first
+       
         // определяем отступ сверху от границ окна до Safe Area
         let topPadding = window?.safeAreaInsets.top ?? 0
         // устанавливаем координату Y кнопки в соответствии с отступом
