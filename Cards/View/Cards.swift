@@ -6,9 +6,9 @@
 //
 import UIKit
 
-protocol FlippableView: UIView {
+protocol FlippableView: UIView, Equatable {
     var isFlipped: Bool { get set }
-    var flipCompletionHandler: ((FlippableView) -> Void)? { get set }
+    var flipCompletionHandler: ((any FlippableView) -> Void)? { get set }
     func flip()
 }
 
@@ -38,6 +38,10 @@ class CardView<ShapeType: ShapeLayerProtocol>: UIView, FlippableView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    static func == (lhs: CardView<ShapeType>, rhs: CardView<ShapeType>) -> Bool {
+        lhs.tag == rhs.tag && lhs.color == rhs.color && lhs.isFlipped == rhs.isFlipped
     }
     
     override func draw(_ rect: CGRect) {
