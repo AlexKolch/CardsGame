@@ -6,7 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		FC50A4E22E84769D003E1B31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCEEBA1F2E49DE0C00C23023 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCEEBA262E49DE0C00C23023;
+			remoteInfo = Cards;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		FC50A4DE2E84769D003E1B31 /* CardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEEBA272E49DE0C00C23023 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEEBA3F2E49DE3B00C23023 /* BezierExperiments.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BezierExperiments.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FCEEBA562E53160000C23023 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -24,6 +35,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		FC50A4DF2E84769D003E1B31 /* CardsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CardsTests;
+			sourceTree = "<group>";
+		};
 		FCEEBA292E49DE0C00C23023 /* Cards */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -35,6 +51,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FC50A4DB2E84769D003E1B31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FCEEBA242E49DE0C00C23023 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,6 +75,7 @@
 				FCEEBA562E53160000C23023 /* MyPlayground.playground */,
 				FCEEBA3F2E49DE3B00C23023 /* BezierExperiments.playground */,
 				FCEEBA292E49DE0C00C23023 /* Cards */,
+				FC50A4DF2E84769D003E1B31 /* CardsTests */,
 				FCEEBA282E49DE0C00C23023 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				FCEEBA272E49DE0C00C23023 /* Cards.app */,
+				FC50A4DE2E84769D003E1B31 /* CardsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +92,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FC50A4DD2E84769D003E1B31 /* CardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC50A4E42E84769D003E1B31 /* Build configuration list for PBXNativeTarget "CardsTests" */;
+			buildPhases = (
+				FC50A4DA2E84769D003E1B31 /* Sources */,
+				FC50A4DB2E84769D003E1B31 /* Frameworks */,
+				FC50A4DC2E84769D003E1B31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC50A4E32E84769D003E1B31 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FC50A4DF2E84769D003E1B31 /* CardsTests */,
+			);
+			name = CardsTests;
+			packageProductDependencies = (
+			);
+			productName = CardsTests;
+			productReference = FC50A4DE2E84769D003E1B31 /* CardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FCEEBA262E49DE0C00C23023 /* Cards */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCEEBA3A2E49DE0D00C23023 /* Build configuration list for PBXNativeTarget "Cards" */;
@@ -99,6 +147,10 @@
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
+					FC50A4DD2E84769D003E1B31 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = FCEEBA262E49DE0C00C23023;
+					};
 					FCEEBA262E49DE0C00C23023 = {
 						CreatedOnToolsVersion = 16.3;
 					};
@@ -119,11 +171,19 @@
 			projectRoot = "";
 			targets = (
 				FCEEBA262E49DE0C00C23023 /* Cards */,
+				FC50A4DD2E84769D003E1B31 /* CardsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FC50A4DC2E84769D003E1B31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FCEEBA252E49DE0C00C23023 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +194,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FC50A4DA2E84769D003E1B31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FCEEBA232E49DE0C00C23023 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -143,7 +210,61 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FC50A4E32E84769D003E1B31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCEEBA262E49DE0C00C23023 /* Cards */;
+			targetProxy = FC50A4E22E84769D003E1B31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		FC50A4E52E84769D003E1B31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 527U829H6E;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AlexKolch.CardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cards";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Debug;
+		};
+		FC50A4E62E84769D003E1B31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 527U829H6E;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AlexKolch.CardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cards";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Release;
+		};
 		FCEEBA3B2E49DE0D00C23023 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -332,6 +453,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FC50A4E42E84769D003E1B31 /* Build configuration list for PBXNativeTarget "CardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC50A4E52E84769D003E1B31 /* Debug */,
+				FC50A4E62E84769D003E1B31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FCEEBA222E49DE0C00C23023 /* Build configuration list for PBXProject "Cards" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

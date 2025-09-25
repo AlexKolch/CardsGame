@@ -17,9 +17,9 @@ class BoardGameController: UIViewController {
     
     // игральные карточки
     var cardViews = [UIView]()
-    private var flippedCards = [any FlippableView]() //Значение в данном свойстве будут использоваться для сравнения идентичности карточек
+    var flippedCards = [any FlippableView]() //Значение в данном свойстве будут использоваться для сравнения идентичности карточек
     //настроенный экземпляр игры
-    private lazy var game: Game = getNewGame()
+    lazy var game: Game = getNewGame()
     
     /// получаем доступ к текущему окну
     private var currentWindow: UIWindow? {
@@ -138,24 +138,23 @@ class BoardGameController: UIViewController {
         return cardViews
     }
     
-    private func handleCardFlip(_ flippedCard: any FlippableView) {
-        // поднимаем карточку вверх иерархии
+    func handleCardFlip(_ flippedCard: any FlippableView) {
         flippedCard.superview?.bringSubviewToFront(flippedCard)
         
-        // добавляем или удаляем карточку
+        // добавляем карточку в список перевернутых
         if flippedCard.isFlipped && self.flippedCards.count < 2 {
             self.flippedCards.append(flippedCard)
         } else if let index = self.flippedCards.firstIndex(where: { $0.tag == flippedCard.tag }) {
             self.flippedCards.remove(at: index)
         }
         
-        // если перевернуто 2 карточки
+        // если перевернуто 2 карточки запускаем проверку идентичности
         if self.flippedCards.count == 2 {
             self.processFlippedCards()
         }
     }
     
-    private func processFlippedCards() {
+    func processFlippedCards() {
         // получаем карточки из данных модели по tag в который записали index карточки
         let firstCard: Card = game.cards[self.flippedCards.first!.tag]
         let secondCard: Card = game.cards[self.flippedCards.last!.tag]
